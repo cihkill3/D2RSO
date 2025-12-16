@@ -70,7 +70,7 @@ namespace D2RSO
             InitializeComponent();
             DataContext = this;
 
-            Title = $"D2R Skill Overlay V1.0.5";
+            Title = $"D2R Skill Overlay V1.0.6";
 
             IsMaxRestoreButtonEnabled = false;
             IsMinButtonEnabled = true;

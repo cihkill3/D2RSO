@@ -58,6 +58,44 @@ namespace D2RSO
             {
                 var windowHwnd = new WindowInteropHelper(this).Handle;
                 WindowsServices.SetWindowExTransparent(windowHwnd);
+
+                // Start active window monitoring
+                var activeWindowCheckTimer = new Timer(500) { AutoReset = true };
+                activeWindowCheckTimer.Elapsed += (_, _) => CheckActiveWindow();
+                activeWindowCheckTimer.Start();
+            }
+        }
+
+        private void CheckActiveWindow()
+        {
+            try
+            {
+                IntPtr hWnd = WindowsServices.GetForegroundWindow();
+                WindowsServices.GetWindowThreadProcessId(hWnd, out uint processId);
+                var process = System.Diagnostics.Process.GetProcessById((int)processId);
+
+                this.Dispatcher.Invoke(() =>
+                {
+                    if (process.ProcessName.Equals("D2R", StringComparison.OrdinalIgnoreCase))
+                    {
+                        if (Visibility != Visibility.Visible)
+                        {
+                            Visibility = Visibility.Visible;
+                            Topmost = true; // Ensure it stays on top when D2R is active
+                        }
+                    }
+                    else
+                    {
+                        if (Visibility == Visibility.Visible)
+                        {
+                            Visibility = Visibility.Hidden;
+                        }
+                    }
+                });
+            }
+            catch
+            {
+                // Ignore errors (e.g., process exiting, access denied)
             }
         }
 
