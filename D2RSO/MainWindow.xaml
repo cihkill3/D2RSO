@@ -221,7 +221,7 @@
 
 		<Border Grid.Row="4" BorderBrush="{StaticResource MahApps.Brushes.AccentBase}" BorderThickness="0,1,0,0">
 			<StackPanel Orientation="Vertical">
-				<TextBlock HorizontalAlignment="Center" Padding="0">Open-source project by <Hyperlink NavigateUri="https://github.com/panthernet" Click="Hyperlink_OnClick">panthernet software</Hyperlink></TextBlock>
+				<TextBlock HorizontalAlignment="Center" Padding="0">Open-source project by <Hyperlink NavigateUri="https://github.com/cihkill3/D2RSO" Click="Hyperlink_OnClick">panthernet software</Hyperlink></TextBlock>
 				<Label Padding="1,0,1,1" HorizontalAlignment="Center" Content="Diablo II: Resurrected is a registred trademark of © BLIZZARD ENTERTAINMENT, INC." FontSize="8"/>
 			</StackPanel>
 		</Border>

@@ -342,7 +342,7 @@ namespace D2RSO
 
         private void Hyperlink_OnClick(object sender, RoutedEventArgs e)
         {
-            var pi = new ProcessStartInfo("https://github.com/panthernet") { UseShellExecute = true };
+            var pi = new ProcessStartInfo("https://github.com/cihkill3/D2RSO") { UseShellExecute = true };
             Process.Start(pi);
         }
 
