@@ -26,3 +26,9 @@ PS: You can add your own images to `./Images/Skills` folder
 
 ![image](https://user-images.githubusercontent.com/5926603/136777614-2d0fca33-68b9-4732-8e14-7cd06f6d7fab.png)
 ![image](https://user-images.githubusercontent.com/5926603/136778357-9026e912-1af4-4d3a-87b7-600a50833b5a.png)
+
+
+## .NET 8.0 Desktop Runtime (v8.0.22) - Windows x64 Installer
+https://dotnet.microsoft.com/ko-kr/download/dotnet/thank-you/runtime-desktop-8.0.22-windows-x64-installer
+https://builds.dotnet.microsoft.com/dotnet/WindowsDesktop/8.0.22/windowsdesktop-runtime-8.0.22-win-x64.exe
+
