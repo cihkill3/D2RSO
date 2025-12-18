@@ -3,7 +3,7 @@
 + Smart Overlay Visibility (only shows when D2R is active)
 + Updated dependencies and project links
 
-V1.0.6
+V1.0.5
 + Fixed controls hook crashes
 + Fixed skill buttons display after loading previously saved config
 
